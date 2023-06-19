@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Form</title>
+<link rel="stylesheet" href="">
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+</head>
+<body>
+<h1>Form</h1>
+<div id="fornContainer">
+<div id="header">
+</div>
+</body>
+
+<script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyB6TW24RJOg-i2i6wJUHyNwWcXcZxRVUCU",
+            authDomain: "nahamstagram.firebaseapp.com",
+            databaseURL: "https://nahamstagram.firebaseio.com",
+            projectId: "nahamstagram",
+            storageBucket: "nahamstagram.appspot.com",
+            messagingSenderId: "426921051409",
+            appId: "1:426921051409:android:f2b7cc516a47bc7fb2b8b0"
+        };
+
+        var f = firebase.initializeApp(firebaseConfig);
+        console.log(firebase.app())
+
+        // firebase.database().ref('1/drafts').once('value').then((snapshot) => {
+        //     console.log(snapshot.val());
+        // });
+
+
+        firebase.database().ref(".info/connected").on("value", function(snap) {
+            if (snap.val() === true) {
+                console.log("Connected to the database.");
+            } else {
+                console.log("Disconnected from the database.");
+            }
+        });
+
+</script>
+</body>
+
+</html>

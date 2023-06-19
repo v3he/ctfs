@@ -1,0 +1,4 @@
+Can you break my hashed-based MAC again? Below are some resources that may be useful. 
+
+https://www.rfc-editor.org/rfc/rfc3174
+https://en.wikipedia.org/wiki/Length_extension_attack

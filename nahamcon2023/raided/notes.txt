@@ -1,0 +1,3 @@
+The police raided a server belonging to a very 1337 hax0r that was used to stage attacks. Upon further investigation, this server turned out to be a jump server for the attacker to access more infrastructure.
+
+A memory snapshot was taken of the machine. See if you can figure out what the attacker was doing and what other systems the hacker was accessing. 
