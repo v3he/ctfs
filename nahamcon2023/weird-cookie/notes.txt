@@ -1,2 +1,0 @@
-download https://github.com/io12/pwninit/releases to patch the binary to the correct libc
-execute pwninit and will create all the struct
